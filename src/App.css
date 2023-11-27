@@ -1,38 +1,65 @@
 .App {
+  border: 1px solid #3d3d3d;
+  margin: 50px 30px;
+  padding: 25px 15px;
+  border-radius: 10px;
+}
+
+.title {
   text-align: center;
+  color: darkred;
+  font-size: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.to-do-container {
   display: flex;
   flex-direction: column;
+}
+
+.to-do-container ul li {
+  width: 170px;
+  overflow-wrap: break-word;
+  list-style-type: "👉";
+  cursor: pointer;
+  color: darkred;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item span {
+  cursor: pointer;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 5px;
+  font-size: 20px;
+  color: darkred;
+  margin-bottom: 10px;
+  caret-color: darkred;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  color: #fff;
+  background-color: darkred;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
